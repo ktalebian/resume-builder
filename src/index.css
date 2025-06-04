@@ -7,22 +7,31 @@
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: auto;
-    padding: 20mm;
+    padding: 0; /* Remove padding to ensure edge-to-edge layout */
     max-width: 170mm;
+    overflow: hidden; /* Ensure background extends to edges */
 }
 
 .screen-layout {
     display: table;
     table-layout: fixed;
     width: 100%;
+    border-spacing: 0; /* Remove spacing between columns */
 }
 
 .print-left-column {
     display: table-cell;
     width: 33%;
     vertical-align: top;
-    padding-right: 2rem;
-    background-color: #f0f8ff;
+    background-color: #f0f8ff; /* Subtle blue background color */
+    padding: 0; /* Remove padding to ensure edge-to-edge background */
+    position: relative; /* For absolute positioning of background */
+}
+
+.inner-left-column {
+    padding: 2rem; /* Add padding inside the content */
+    position: relative;
+    z-index: 1; /* Ensure content is above background */
 }
 
 .print-right-column {
@@ -31,6 +40,11 @@
     vertical-align: top;
 }
 
+.inner-right-column {
+    padding: 2rem; /* Add padding inside the content */
+}
+
+/* Optional scaling for smaller screens */
 @media screen and (max-width: 1400px) {
     .resume-container {
         transform: scale(0.9);
@@ -49,7 +63,7 @@
 @media print {
     @page {
         size: A4;
-        margin: 5mm;
+        margin: 0; /* Remove page margins for edge-to-edge background */
     }
 
     html,
@@ -78,21 +92,33 @@
         display: table !important;
         table-layout: fixed !important;
         width: 100% !important;
+        border-spacing: 0 !important; /* Ensure no spacing between columns */
     }
 
     .print-left-column {
         display: table-cell !important;
         width: 33% !important;
         vertical-align: top !important;
-        padding-right: 2rem !important;
+        background-color: #f0f8ff !important; /* Ensure background color is applied in print */
+        padding: 0 !important; /* Remove padding for edge-to-edge background */
         page-break-inside: avoid;
-        background-color: #f0f8ff;
+        position: relative !important;
+    }
+
+    .inner-left-column {
+        padding: 1.5rem !important; /* Add padding inside the content */
+        position: relative !important;
+        z-index: 1 !important;
     }
 
     .print-right-column {
         display: table-cell !important;
         width: 67% !important;
         vertical-align: top !important;
+    }
+
+    .inner-right-column {
+        padding: 1.5rem !important; /* Add padding inside the content */
     }
 
     .space-y-6 > div,

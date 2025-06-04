@@ -255,101 +255,104 @@ function ResumeComponent() {
         <div
           className={`${isJsonEditorCollapsed ? "lg:col-span-1" : "lg:col-span-2"} bg-white rounded-lg shadow-lg`}
         >
-          <div ref={resumeRef} className="p-4">
+          <div ref={resumeRef} className="resume-container">
             <div className="screen-layout">
-              <div className="print-left-column space-y-4">
-                <div>
-                  <div className="text-2xl font-bold text-gray-900">
-                    {resume.contact.name}
-                  </div>
-                  <div className="text-lg text-gray-600 mb-3">
-                    {resume.contact.title}
+              <div className="print-left-column">
+                <div className="inner-left-column space-y-4">
+                  <div>
+                    <div className="text-2xl font-bold text-gray-900">
+                      {resume.contact.name}
+                    </div>
+                    <div className="text-lg text-gray-600 mb-3">
+                      {resume.contact.title}
+                    </div>
+
+                    <div className="space-y-1 text-sm text-gray-700">
+                      <div className="flex items-center gap-2">
+                        <FaGlobe className="w-4 h-4 text-gray-600" />
+                        <span>{resume.contact.website}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <FaEnvelope className="w-4 h-4 text-gray-600" />
+                        <span>{resume.contact.email}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <FaPhone className="w-4 h-4 text-gray-600" />
+                        <span>{resume.contact.phone}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <FaLinkedin className="w-4 h-4 text-gray-600" />
+                        <span>{resume.contact.linkedin}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <FaGithub className="w-4 h-4 text-gray-600" />
+                        <span>{resume.contact.github}</span>
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="space-y-1 text-sm text-gray-700">
-                    <div className="flex items-center gap-2">
-                      <FaGlobe className="w-4 h-4 text-gray-600" />
-                      <span>{resume.contact.website}</span>
+                  <div>
+                    <div className="text-lg font-bold text-gray-900 mb-3">
+                      Technical Skills
                     </div>
-                    <div className="flex items-center gap-2">
-                      <FaEnvelope className="w-4 h-4 text-gray-600" />
-                      <span>{resume.contact.email}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <FaPhone className="w-4 h-4 text-gray-600" />
-                      <span>{resume.contact.phone}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <FaLinkedin className="w-4 h-4 text-gray-600" />
-                      <span>{resume.contact.linkedin}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <FaGithub className="w-4 h-4 text-gray-600" />
-                      <span>{resume.contact.github}</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="text-lg font-bold text-gray-900 mb-3">
-                    Technical Skills
-                  </div>
-                  <div className="space-y-4">
-                    {Object.entries(resume.skills).map(([name, skill]) => (
-                      <div key={name}>
-                        <div className="font-semibold text-sm text-gray-800 mb-2">
-                          {name}
-                        </div>
-                        <div className="text-xs text-gray-700 leading-relaxed space-y-1">
-                          {skill.expert &&
-                            typeof skill.expert === "string" &&
-                            skill.expert.trim() && (
-                              <div>
-                                <Markdown>
-                                  {`**Expert:** ${skill.expert}`}
-                                </Markdown>
-                              </div>
-                            )}
-                          {skill.proficient &&
-                            typeof skill.proficient === "string" &&
-                            skill.proficient.trim() && (
-                              <div>
-                                <Markdown>
-                                  {`**Proficient:** ${skill.proficient}`}
-                                </Markdown>
-                              </div>
-                            )}
-                          {skill.low &&
-                            typeof skill.low === "string" &&
-                            skill.low.trim() && (
-                              <div>
-                                <Markdown>{`**Low:** ${skill.low}`}</Markdown>
-                              </div>
-                            )}
-                          <div className="space-y-1">
-                            {(skill.descriptions ?? []).map((desc) => (
-                              <Markdown>{desc.trim()}</Markdown>
-                            ))}
+                    <div className="space-y-4">
+                      {Object.entries(resume.skills).map(([name, skill]) => (
+                        <div key={name}>
+                          <div className="font-semibold text-sm text-gray-800 mb-2">
+                            {name}
+                          </div>
+                          <div className="text-xs text-gray-700 leading-relaxed space-y-1">
+                            {skill.expert &&
+                              typeof skill.expert === "string" &&
+                              skill.expert.trim() && (
+                                <div>
+                                  <Markdown>
+                                    {`**Expert:** ${skill.expert}`}
+                                  </Markdown>
+                                </div>
+                              )}
+                            {skill.proficient &&
+                              typeof skill.proficient === "string" &&
+                              skill.proficient.trim() && (
+                                <div>
+                                  <Markdown>
+                                    {`**Proficient:** ${skill.proficient}`}
+                                  </Markdown>
+                                </div>
+                              )}
+                            {skill.low &&
+                              typeof skill.low === "string" &&
+                              skill.low.trim() && (
+                                <div>
+                                  <Markdown>{`**Low:** ${skill.low}`}</Markdown>
+                                </div>
+                              )}
+                            <div className="space-y-1">
+                              {(skill.descriptions ?? []).map((desc) => (
+                                <Markdown>{desc.trim()}</Markdown>
+                              ))}
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
+
+                  <LeftPanelProject
+                    section="Personal Projects"
+                    items={resume.projects}
+                  />
+
+                  <LeftPanelProject
+                    // roleInline
+                    section="Education"
+                    items={resume.educations}
+                  />
                 </div>
-
-                <LeftPanelProject
-                  section="Personal Projects"
-                  items={resume.projects}
-                />
-
-                <LeftPanelProject
-                  // roleInline
-                  section="Education"
-                  items={resume.educations}
-                />
               </div>
 
-              <div className="print-right-column space-y-4">
+              <div className="print-right-column">
+                <div className="inner-right-column space-y-4">
                 <div className="space-y-1">
                   {resume.summaries.map((summary) => (
                     <Markdown className="text-sm text-gray-700 leading-relaxed">
@@ -361,7 +364,7 @@ function ResumeComponent() {
                 <div className="space-y-4">
                   {resume.experiences.map((job, index) => (
                     <div key={index}>
-                      <div className="flex justify-between items-center">
+                      <div className="flex justify-between items-center m1">
                         <div>
                           <div className="text-lg font-bold text-gray-900">
                             {job.company}{" "}
@@ -391,6 +394,7 @@ function ResumeComponent() {
                       </ul>
                     </div>
                   ))}
+                </div>
                 </div>
               </div>
             </div>

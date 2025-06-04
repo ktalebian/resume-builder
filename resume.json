@@ -17,13 +17,11 @@
     {
       "title": "University of British Columbia",
       "role": "Master of Applied Science",
-      "date": "2014",
       "descriptions": []
     },
     {
       "title": "University of British Columbia",
       "role": "Bachelor of Engineering Physics",
-      "date": "2012",
       "descriptions": []
     }
   ],
@@ -52,12 +50,10 @@
       "endDate": "Present",
       "tags": [
         "AI",
-        "LLM",
         "A2A/MCP",
         "Evals",
         "LLM Observatory",
         "Prompt Foo",
-        "Experimentation",
         "K8s"
       ],
       "bullets": [
@@ -79,7 +75,6 @@
         "Java",
         "TypeScript",
         "System Design",
-        "Prompt Foo",
         "Docker"
       ],
       "bullets": [

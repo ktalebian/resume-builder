@@ -3,7 +3,7 @@ import Markdown from "./Markdown";
 export type LeftPanelProjectItem = {
   title: string;
   role?: string;
-  date: string;
+  date?: string; // Made optional
   descriptions: string[];
 };
 
@@ -26,14 +26,18 @@ export default function LeftPanelProject({
           <div key={index}>
             <h4 className="font-semibold text-gray-800 text-sm">
               {item.title}{" "}
-              {!roleInline && (
+              {!roleInline && item.date && (
                 <span className="font-normal text-gray-600">({item.date})</span>
               )}
             </h4>
             {roleInline ? (
               <div className="text-gray-800 text-sm italic mb-1">
                 {item.role}{" "}
-                <span className="font-normal text-gray-600">({item.date})</span>
+                {item.date && (
+                  <span className="font-normal text-gray-600">
+                    ({item.date})
+                  </span>
+                )}
               </div>
             ) : (
               <div className="text-gray-800 text-sm italic mb-1">
