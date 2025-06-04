@@ -1,0 +1,137 @@
+{
+  "contact": {
+    "name": "Kousha Talebian",
+    "title": "Software Engineer",
+    "website": "koushatalebian.com",
+    "email": "k@ousha.me",
+    "phone": "+1 (778) 688-6587",
+    "linkedin": "linkedin.com/in/koushatalebian",
+    "github": "github.com/ktalebian"
+  },
+  "summaries": [
+    "An experienced software engineer with **15+ years** in full-stack development, having led teams of **8+ engineers** and business units of **50+ members** to take multiple products from **prototype to GA** and scale them to **millions of active users**.",
+    "Proven ability to **rapidly prototype** and **launch products** while **optimizing performance** in high-scale production environments serving millions of users.",
+    "Currently, I am actively building, learning, and contributing to AI systems through local hackathons and research on emerging protocols such as **MCP and A2A**."
+  ],
+  "educations": [
+    {
+      "title": "University of British Columbia",
+      "role": "Master of Applied Science",
+      "date": "2014",
+      "descriptions": []
+    },
+    {
+      "title": "University of British Columbia",
+      "role": "Bachelor of Engineering Physics",
+      "date": "2012",
+      "descriptions": []
+    }
+  ],
+  "skills": {
+    "Coding": {
+      "expert": "Full Stack Generalist, TS/JS, Java, Node, SQL (Postgres, MySQL, DynamoDB).",
+      "proficient": "Temporal, Bash, Python, Lua/OpenResty, PHP."
+    },
+    "AI": {
+      "descriptions": [
+        "Built multiple voice and text agents in collaboration with OpenAI, Google Gemini and Anthropic. Contributed to development of A2A and MCP."
+      ]
+    },
+    "Production Operations": {
+      "descriptions": [
+        "Over a dozen services from prototype to GA with full observability, scaling, security, and production infrastructure in high-availability cloud/native environments. Proficient in Docker/Kubernetes, CI/CD pipelines (GitHub Actions, Jenkins, Buildkite), and monitoring stack (DataDog, Prometheus, Grafana)."
+      ]
+    }
+  },
+  "experiences": [
+    {
+      "company": "Twilio",
+      "role": "Emerging Tech Researcher",
+      "location": "Vancouver, Canada",
+      "startDate": "Jun 2024",
+      "endDate": "Present",
+      "tags": [
+        "AI",
+        "LLM",
+        "A2A/MCP",
+        "Evals",
+        "LLM Observatory",
+        "Prompt Foo",
+        "Experimentation",
+        "K8s"
+      ],
+      "bullets": [
+        "Developed and shipped Twilio AI Assistant, with custom Knowledge and Tools.",
+        "Collaborated with OpenAI and Google Gemini on several product launches as demo partner, resulting in 1 patent, 3 publications, and partnership inquiries from major tech companies.",
+        "Built internal tooling with numerous frameworks, including LangChain, Lakera, Galileo, Prompt Foo, FireCrawl.",
+        "Developed confidential 3-5 year Horizon 3 projects (under NDA) to build Twilio's next billion-dollar product arm."
+      ]
+    },
+    {
+      "company": "Twilio",
+      "role": "Principal Engineer",
+      "location": "Vancouver, Canada",
+      "startDate": "May 2020",
+      "endDate": "Jun 2024",
+      "tags": [
+        "Temporal",
+        "AWS",
+        "Java",
+        "TypeScript",
+        "System Design",
+        "Prompt Foo",
+        "Docker"
+      ],
+      "bullets": [
+        "Assisted as a 'loan architect' to different teams to help design their new products and help with cross-team collaboration.",
+        "Designed and built the degraded fallback system model for Twilio Flex product.",
+        "Architected Twilio Flex’s next-gen execution engine with Temporal (1,000+ steps/sec; 5× more than Studio throughput), resulting in published patent (US 2023/0351290 A1).",
+        "Improved the Twilio Flex edge service reliability by eliminating weekly incidents, achieving near-zero downtime over one year.",
+        "Developed a company-wide gameday model, improving service resiliency.",
+        "Improved Twilio Flex edge service performance to 1k+ req/sec, vastly outperforming Twilio's API edge service."
+      ]
+    },
+    {
+      "company": "Twilio",
+      "role": "Staff Engineer",
+      "location": "San Francisco, CA",
+      "startDate": "April 2016",
+      "endDate": "May 2020",
+      "tags": ["Lambda", "Java", "React", "OpenAPI", "ElasticSearch", "Kafka"],
+      "bullets": [
+        "Developed and released a series of developer tools announced at Twilio Signal, including Functions & Assets, Studio, TwiML Bins, Debugger and API Explorer.",
+        "Led the GAing of Twilio Studio and assisted with GAing of Twilio Functions & Assets.",
+        "Designed and developed the customization engine of the SaaS Twilio Flex.",
+        "Led modernization effort to React; developed a front-end deployment pipeline, streamlining company-wide front-end development."
+      ]
+    },
+    {
+      "company": "iCracked",
+      "role": "Software Engineer",
+      "location": "San Francisco, CA",
+      "startDate": "Feb 2015",
+      "endDate": "Apr 2016",
+      "tags": ["Node", "JavaScript", "Linux/Debian", "SoC"],
+      "bullets": [
+        "Designed and manufactured portable computer with battery for remote cellphone diagnostics by field technicians. Device shipped with custom Linux OS that booted twice as fast as vanilla Debian.",
+        "Developed dashboard for remote monitoring, OTA updates and device management of the computers."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Zkout",
+      "date": "2025-Present",
+      "descriptions": [
+        "Custom AI agent that analyzes bulk resume datasets (100+ resumes) against job requirements, generating automated candidate summaries and hiring recommendations for recruitment consulting clients."
+      ]
+    },
+    {
+      "title": "Common Ground",
+      "date": "2023-Present",
+      "descriptions": [
+        "Founded and built event hosting platform connecting people and communities. Scaled to 2,000+ active members, 1,000+ daily users, generating $50K+ revenue from 3,000+ ticket sales."
+      ]
+    }
+  ]
+}
