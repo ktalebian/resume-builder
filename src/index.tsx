@@ -253,9 +253,9 @@ function ResumeComponent() {
         </div>
 
         <div
-          className={`${isJsonEditorCollapsed ? "lg:col-span-1" : "lg:col-span-2"} bg-white rounded-lg shadow-lg`}
+          className={`${isJsonEditorCollapsed ? "lg:col-span-1" : "lg:col-span-2"}`}
         >
-          <div ref={resumeRef} className="resume-container">
+          <div ref={resumeRef} className="resume-container bg-white rounded-lg shadow-lg">
             <div className="screen-layout">
               <div className="print-left-column">
                 <div className="inner-left-column space-y-3">

@@ -8,7 +8,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: auto;
     padding: 0; /* Remove padding to ensure edge-to-edge layout */
-    max-width: 170mm;
+    width: 100%; /* Full width on screen */
+    max-width: 1200px; /* Reasonable max width for screens */
     overflow: hidden; /* Ensure background extends to edges */
 }
 
@@ -80,8 +81,8 @@
     }
 
     .resume-container {
-        width: auto !important;
-        max-width: none !important;
+        width: 210mm !important; /* A4 width */
+        max-width: 210mm !important;
         margin: 0 auto !important;
         padding: 0 !important;
         box-shadow: none;
