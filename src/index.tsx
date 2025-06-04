@@ -258,7 +258,7 @@ function ResumeComponent() {
           <div ref={resumeRef} className="resume-container">
             <div className="screen-layout">
               <div className="print-left-column">
-                <div className="inner-left-column space-y-4">
+                <div className="inner-left-column space-y-3">
                   <div>
                     <div className="text-2xl font-bold text-gray-900">
                       {resume.contact.name}
@@ -295,7 +295,7 @@ function ResumeComponent() {
                     <div className="text-lg font-bold text-gray-900 mb-3">
                       Technical Skills
                     </div>
-                    <div className="space-y-4">
+                    <div className="space-y-3">
                       {Object.entries(resume.skills).map(([name, skill]) => (
                         <div key={name}>
                           <div className="font-semibold text-sm text-gray-800 mb-2">
@@ -339,7 +339,7 @@ function ResumeComponent() {
                   </div>
 
                   <LeftPanelProject
-                    section="Personal Projects"
+                    section="Personal Ventures"
                     items={resume.projects}
                   />
 
@@ -352,49 +352,49 @@ function ResumeComponent() {
               </div>
 
               <div className="print-right-column">
-                <div className="inner-right-column space-y-4">
-                <div className="space-y-1">
-                  {resume.summaries.map((summary) => (
-                    <Markdown className="text-sm text-gray-700 leading-relaxed">
-                      {summary.trim()}
-                    </Markdown>
-                  ))}
-                </div>
+                <div className="inner-right-column space-y-3">
+                  <div className="space-y-1">
+                    {resume.summaries.map((summary) => (
+                      <Markdown className="text-sm text-gray-700 leading-relaxed">
+                        {summary.trim()}
+                      </Markdown>
+                    ))}
+                  </div>
 
-                <div className="space-y-4">
-                  {resume.experiences.map((job, index) => (
-                    <div key={index}>
-                      <div className="flex justify-between items-center m1">
-                        <div>
-                          <div className="text-lg font-bold text-gray-900">
-                            {job.company}{" "}
-                            <span className="font-normal text-gray-800">
-                              ({job.role})
-                            </span>
+                  <div className="space-y-3">
+                    {resume.experiences.map((job, index) => (
+                      <div key={index}>
+                        <div className="flex justify-between items-center m1">
+                          <div>
+                            <div className="text-lg font-bold text-gray-900">
+                              {job.company}{" "}
+                              <span className="font-normal text-gray-800">
+                                ({job.role})
+                              </span>
+                            </div>
+                          </div>
+                          <div className="text-right text-xs text-gray-600 align-bottom">
+                            {job.location} | {job.startDate} — {job.endDate}
                           </div>
                         </div>
-                        <div className="text-right text-xs text-gray-600 align-bottom">
-                          {job.location} | {job.startDate} — {job.endDate}
+
+                        <div className="mb-2">
+                          {job.tags.map((tag, tagIndex) => (
+                            <Tag key={tagIndex}>{tag}</Tag>
+                          ))}
                         </div>
-                      </div>
 
-                      <div className="mb-2">
-                        {job.tags.map((tag, tagIndex) => (
-                          <Tag key={tagIndex}>{tag}</Tag>
-                        ))}
+                        <ul className="text-sm text-gray-700">
+                          {job.bullets.map((bullet, bulletIndex) => (
+                            <li key={bulletIndex} className="flex">
+                              <span className="mr-2">•</span>
+                              <Markdown>{bullet}</Markdown>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-
-                      <ul className="text-sm text-gray-700">
-                        {job.bullets.map((bullet, bulletIndex) => (
-                          <li key={bulletIndex} className="flex">
-                            <span className="mr-2">•</span>
-                            <Markdown>{bullet}</Markdown>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

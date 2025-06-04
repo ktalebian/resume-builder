@@ -9,9 +9,9 @@
     "github": "github.com/ktalebian"
   },
   "summaries": [
-    "An experienced software engineer with **15+ years** in full-stack development, having led teams of **8+ engineers** and business units of **50+ members** to take multiple products from **prototype to GA** and scale them to **millions of active users**.",
-    "Proven ability to **rapidly prototype** and **launch products** while **optimizing performance** in high-scale production environments serving millions of users.",
-    "Currently, I am actively building, learning, and contributing to AI systems through local hackathons and research on emerging protocols such as **MCP and A2A**."
+    "Full-stack engineer with **15+ years** of experience building and scaling distributed systems. I’ve led teams of **8+ engineers** and cross-functional orgs of **50+** to take multiple products from p**rototype to GA**, serving **millions of users**.",
+    "I specialize in **rapid prototyping**, **performance optimization**, and building **resilient infrastructure** for **high-traffic, production-grade** environments.",
+    "Currently focused on **AI systems**, I’m actively contributing through hands-on research, hackathons, and prototyping with emerging protocols like **MCP and A2A**."
   ],
   "educations": [
     {
@@ -44,7 +44,7 @@
   "experiences": [
     {
       "company": "Twilio",
-      "role": "Emerging Tech Researcher",
+      "role": "Principal-level R&D",
       "location": "Vancouver, Canada",
       "startDate": "Jun 2024",
       "endDate": "Present",
@@ -52,15 +52,17 @@
         "AI",
         "A2A/MCP",
         "Evals",
+        "RAG",
         "LLM Observatory",
         "Prompt Foo",
         "K8s"
       ],
       "bullets": [
-        "Developed and shipped Twilio AI Assistant, with custom Knowledge and Tools.",
-        "Collaborated with OpenAI and Google Gemini on several product launches as demo partner, resulting in 1 patent, 3 publications, and partnership inquiries from major tech companies.",
-        "Built internal tooling with numerous frameworks, including LangChain, Lakera, Galileo, Prompt Foo, FireCrawl.",
-        "Developed confidential 3-5 year Horizon 3 projects (under NDA) to build Twilio's next billion-dollar product arm."
+        "Developed the real-time voice channel for Twilio AI Assistant using Media Stream, reduced LLM response latency by 85% (2s → 300ms).",
+        "Leading modernization of Twilio’s API for LLMs, tool calling, and agent-based architectures.",
+        "Engineered integrations for OpenAI and Gemini product launches, leading to 1 filed (unpublished) patent and 3 publications.",
+        "Designed internal LLM evals and observability tooling using LangChain, Lakera, Galileo, FireCraw, Pinecode.",
+        "Led confidential Horizon 3 R&D initiatives under NDA, exploring future-facing AI opportunities outside Twilio’s core offerings."
       ]
     },
     {
@@ -78,26 +80,25 @@
         "Docker"
       ],
       "bullets": [
-        "Assisted as a 'loan architect' to different teams to help design their new products and help with cross-team collaboration.",
-        "Designed and built the degraded fallback system model for Twilio Flex product.",
-        "Architected Twilio Flex’s next-gen execution engine with Temporal (1,000+ steps/sec; 5× more than Studio throughput), resulting in published patent (US 2023/0351290 A1).",
-        "Improved the Twilio Flex edge service reliability by eliminating weekly incidents, achieving near-zero downtime over one year.",
-        "Developed a company-wide gameday model, improving service resiliency.",
-        "Improved Twilio Flex edge service performance to 1k+ req/sec, vastly outperforming Twilio's API edge service."
+        "Embedded as a ‘loan architect’ across teams to lead new product designs and resolve cross-functional architectural misalignments.",
+        "Designed and implemented degraded fallback for Twilio Flex, ensuring graceful service continuity under partial downtime.",
+        "Architected next-gen execution engine for Twilio Flex with Temporal (scaling to 1k+ transitions/sec — 5× the throughput of Studio); resulted in US patent 2023/0351290 A1.",
+        "Reduced Flex edge service incidents from nearly biweekly to near-zero through through chaos testing, expanding observability, and hardening CI/CD.",
+        "Scaled Flex edge service to 1k+ req/sec, outperforming API edge benchmarks by 10× in sustained throughput."
       ]
     },
     {
       "company": "Twilio",
       "role": "Staff Engineer",
       "location": "San Francisco, CA",
-      "startDate": "April 2016",
+      "startDate": "Apr 2016",
       "endDate": "May 2020",
       "tags": ["Lambda", "Java", "React", "OpenAPI", "ElasticSearch", "Kafka"],
       "bullets": [
-        "Developed and released a series of developer tools announced at Twilio Signal, including Functions & Assets, Studio, TwiML Bins, Debugger and API Explorer.",
-        "Led the GAing of Twilio Studio and assisted with GAing of Twilio Functions & Assets.",
-        "Designed and developed the customization engine of the SaaS Twilio Flex.",
-        "Led modernization effort to React; developed a front-end deployment pipeline, streamlining company-wide front-end development."
+        "Launched developer platform tools (Functions, Studio, API Explorer, TwiML Bins, Debugger, CLI) featured at Twilio Signal and adopted by thousands of developers.",
+        "Drove Twilio Studio to GA; supported GA readiness for Functions.",
+        "Built native API and CLI for Flex’s customization engine, replacing manual deploys and enabling over 70% of customers to deploy UI/workflow plugins seamlessly.",
+        "Modernized legacy UI stack by leading migration to React and a new front-end deployment pipeline used org-wide."
       ]
     },
     {
@@ -108,24 +109,24 @@
       "endDate": "Apr 2016",
       "tags": ["Node", "JavaScript", "Linux/Debian", "SoC"],
       "bullets": [
-        "Designed and manufactured portable computer with battery for remote cellphone diagnostics by field technicians. Device shipped with custom Linux OS that booted twice as fast as vanilla Debian.",
-        "Developed dashboard for remote monitoring, OTA updates and device management of the computers."
+        "Designed and shipped battery-powered diagnostic computers for field use, featuring custom Linux OS that booted twice faster than Debian.",
+        "Built dashboard for remote monitoring, OTA updates and device management of diagnostic devices used by field technicians."
       ]
     }
   ],
   "projects": [
     {
       "title": "Zkout",
-      "date": "2025-Present",
+      "date": "2025 — Present",
       "descriptions": [
-        "Custom AI agent that analyzes bulk resume datasets (100+ resumes) against job requirements, generating automated candidate summaries and hiring recommendations for recruitment consulting clients."
+        "Internal tool built with **Python, Electron, and OpenAI** to analyze 500+ resumes against job requirements and generate candidate summaries. Used as part of a consulting practice to deliver hiring recommendations to clients."
       ]
     },
     {
       "title": "Common Ground",
-      "date": "2023-Present",
+      "date": "2023 — Present",
       "descriptions": [
-        "Founded and built event hosting platform connecting people and communities. Scaled to 2,000+ active members, 1,000+ daily users, generating $50K+ revenue from 3,000+ ticket sales."
+        "Founded and built a custom event hosting platform using **Ts.Ed, React, and Aurora MySQL**, deployed via **AWS Elastic Beanstalk** with **CloudFront CDN**. Designed and implemented the full deployment pipeline. Scaled to **2,000+** active members and **$50K+** in ticket sales from **3,000+** event registrations."
       ]
     }
   ]

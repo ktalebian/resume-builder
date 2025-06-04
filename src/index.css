@@ -106,7 +106,7 @@
     }
 
     .inner-left-column {
-        padding: 1.5rem !important; /* Add padding inside the content */
+        padding: 1.25rem !important; /* Add padding inside the content */
         position: relative !important;
         z-index: 1 !important;
     }
@@ -118,7 +118,7 @@
     }
 
     .inner-right-column {
-        padding: 1.5rem !important; /* Add padding inside the content */
+        padding: 1.25rem !important; /* Add padding inside the content */
     }
 
     .space-y-6 > div,
