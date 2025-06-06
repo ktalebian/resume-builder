@@ -20,18 +20,18 @@ export default function LeftPanelProject({
 }: Props) {
   return (
     <div>
-      <h3 className="text-lg font-bold text-gray-900 mb-2">{section}</h3>
+      <div className="text-lg font-bold text-gray-900 mb-2">{section}</div>
       <div className="space-y-3">
         {items.map((item, index) => (
           <div key={index}>
-            <h4 className="font-semibold text-gray-800 text-sm">
+            <div className="font-semibold text-gray-800 text-sm">
               {item.title}{" "}
               {!roleInline && item.date && (
                 <span className="font-normal text-gray-600">({item.date})</span>
               )}
-            </h4>
-            {roleInline ? (
-              <div className="text-gray-800 text-sm italic mb-1">
+            </div>
+            {roleInline && (
+              <div className="text-gray-800 text-sm mb-1">
                 {item.role}{" "}
                 {item.date && (
                   <span className="font-normal text-gray-600">
@@ -39,10 +39,9 @@ export default function LeftPanelProject({
                   </span>
                 )}
               </div>
-            ) : (
-              <div className="text-gray-800 text-sm italic mb-1">
-                {item.role}
-              </div>
+            )}
+            {item.role && (
+              <div className="text-gray-800 text-sm mb-1">{item.role}</div>
             )}
             <div className="space-y-1">
               {(item.descriptions ?? []).map((description, descIndex) => (

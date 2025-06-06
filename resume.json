@@ -5,8 +5,8 @@
     "website": "koushatalebian.com",
     "email": "k@ousha.me",
     "phone": "+1 (778) 688-6587",
-    "linkedin": "linkedin.com/in/koushatalebian",
-    "github": "github.com/ktalebian"
+    "linkedin": "https://linkedin.com/in/koushatalebian",
+    "github": "https://github.com/ktalebian"
   },
   "summaries": [
     "Full-stack engineer with **15+ years** of experience building and scaling distributed systems. I’ve led teams of **8+ engineers** and cross-functional orgs of **50+** to take multiple products from p**rototype to GA**, serving **millions of users**.",
@@ -35,10 +35,9 @@
         "Built multiple voice and text agents in collaboration with OpenAI, Google Gemini and Anthropic. Contributed to development of A2A and MCP."
       ]
     },
-    "Production Operations": {
-      "descriptions": [
-        "Over a dozen services from prototype to GA with full observability, scaling, security, and production infrastructure in high-availability cloud/native environments. Proficient in Docker/Kubernetes, CI/CD pipelines (GitHub Actions, Jenkins, Buildkite), and monitoring stack (DataDog, Prometheus, Grafana)."
-      ]
+    "DevOps & Infrastructure": {
+      "expert": "Over a dozen services from prototype to GA with full observability, scaling, security, and production infrastructure in high-availability cloud/native environments.",
+      "proficient": "AWS, Docker/Kubernetes, CI/CD pipelines (GitHub Actions, Jenkins, Buildkite), monitoring stack (DataDog, Prometheus, Grafana)"
     }
   },
   "experiences": [
@@ -61,7 +60,7 @@
         "Developed the real-time voice channel for Twilio AI Assistant using Media Stream, reduced LLM response latency by 85% (2s → 300ms).",
         "Leading modernization of Twilio’s API for LLMs, tool calling, and agent-based architectures.",
         "Engineered integrations for OpenAI and Gemini product launches, leading to 1 filed (unpublished) patent and 3 publications.",
-        "Designed internal LLM evals and observability tooling using LangChain, Lakera, Galileo, FireCraw, Pinecode.",
+        "Designed internal LLM evals and observability tooling using LangChain, Lakera, Galileo, Firecrawl, Pinecode.",
         "Led confidential Horizon 3 R&D initiatives under NDA, exploring future-facing AI opportunities outside Twilio’s core offerings."
       ]
     },
@@ -126,7 +125,7 @@
       "title": "Common Ground",
       "date": "2023 — Present",
       "descriptions": [
-        "Founded and built a custom event hosting platform using **Ts.Ed, React, and Aurora MySQL**, deployed via **AWS Elastic Beanstalk** with **CloudFront CDN**. Designed and implemented the full deployment pipeline. Scaled to **2,000+** active members and **$50K+** in ticket sales from **3,000+** event registrations."
+        "Founded a community platform to solve the friend-making problem in cities — built with **Ts.Ed, React**, and **Aurora MySQL**, deployed via **AWS Elastic Beanstalk** with **CloudFront CDN** and a custom CI/CD pipeline. Scaled to **2,000+** active members and **$50K+** in ticket sales from **3,000+** event registrations."
       ]
     }
   ]
