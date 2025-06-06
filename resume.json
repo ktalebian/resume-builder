@@ -57,11 +57,11 @@
         "K8s"
       ],
       "bullets": [
-        "Developed the real-time voice channel for Twilio AI Assistant using Media Stream, reduced LLM response latency by 85% (2s → 300ms).",
         "Leading modernization of Twilio’s API for LLMs, tool calling, and agent-based architectures.",
+        "Leading confidential Horizon 3 R&D initiatives under NDA, exploring future-facing AI opportunities outside Twilio’s core offerings.",
         "Engineered integrations for OpenAI and Gemini product launches, leading to 1 filed (unpublished) patent and 3 publications.",
         "Designed internal LLM evals and observability tooling using LangChain, Lakera, Galileo, Firecrawl, Pinecode.",
-        "Led confidential Horizon 3 R&D initiatives under NDA, exploring future-facing AI opportunities outside Twilio’s core offerings."
+        "Developed the real-time voice channel for Twilio AI Assistant using Media Stream, reduced LLM response latency by 85% (2s → 300ms)."
       ]
     },
     {
@@ -81,7 +81,7 @@
       "bullets": [
         "Embedded as a ‘loan architect’ across teams to lead new product designs and resolve cross-functional architectural misalignments.",
         "Designed and implemented degraded fallback for Twilio Flex, ensuring graceful service continuity under partial downtime.",
-        "Architected next-gen execution engine for Twilio Flex with Temporal (scaling to 1k+ transitions/sec — 5× the throughput of Studio); resulted in US patent 2023/0351290 A1.",
+        "Architected next-gen execution engine for Twilio Flex with Temporal (scaling to 1k+ transitions/sec — 5× the throughput of Studio); led to US patent 2023/0351290 A1.",
         "Reduced Flex edge service incidents from nearly biweekly to near-zero through through chaos testing, expanding observability, and hardening CI/CD.",
         "Scaled Flex edge service to 1k+ req/sec, outperforming API edge benchmarks by 10× in sustained throughput."
       ]
