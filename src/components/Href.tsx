@@ -6,7 +6,7 @@ type Props = {
   text: string;
 };
 
-export default function Href({ icon, link, text }: Props) {
+export default function Href({ icon, link }: Props) {
   return (
     <div className="flex items-center gap-2">
       {icon}
