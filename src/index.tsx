@@ -1,21 +1,21 @@
-import React, { useState, useRef, useEffect } from "react";
+import Editor from "@monaco-editor/react";
+import React, { useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom/client";
+import {
+    FaEnvelope,
+    FaGithub,
+    FaGlobe,
+    FaLinkedin,
+    FaPhone,
+} from "react-icons/fa";
 import { useReactToPrint } from "react-to-print";
 import {
-  FaLinkedin,
-  FaGithub,
-  FaPhone,
-  FaEnvelope,
-  FaGlobe,
-} from "react-icons/fa";
-import {
-  Markdown,
-  LeftPanelProject,
-  Tag,
-  LeftPanelProjectItem,
-  Href,
+    Href,
+    LeftPanelProject,
+    LeftPanelProjectItem,
+    Markdown,
+    Tag,
 } from "./components";
-import Editor from "@monaco-editor/react";
 import "./index.css";
 
 interface ContactInfo {
@@ -309,7 +309,7 @@ function ResumeComponent() {
 
                     <div>
                       <div className="text-lg font-bold text-gray-900 mb-2">
-                        Technical Skills
+                        Areas of Expertise
                       </div>
                       <div className="space-y-2">
                         {Object.entries(resume.skills).map(([name, skill]) => (

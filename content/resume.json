@@ -9,9 +9,9 @@
     "github": "https://github.com/ktalebian"
   },
   "summaries": [
-    "Full-stack engineer with **15+ years** of experience building and scaling distributed systems. I’ve led teams of **8+ engineers** and cross-functional orgs of **50+** to take multiple products from p**rototype to GA**, serving **millions of users**.",
-    "I specialize in **rapid prototyping**, **performance optimization**, and building **resilient infrastructure** for **high-traffic, production-grade** environments.",
-    "Currently focused on **AI systems**, I’m actively contributing through hands-on research, hackathons, and prototyping with emerging protocols like **MCP and A2A**."
+    "Full-stack engineer with **15+ years** of experience designing, building and scaling distributed systems. I've led teams of **8+ engineers** and cross-functional orgs of **50+** to take multiple products from **prototype to GA**, serving **millions of users**.",
+    "My expertise lies in **rapid prototyping**, **performance optimization**, and architecting **resilient infrastructure** for **high-traffic, production-grade** environments.",
+    "Currently focused on **AI systems**, I'm actively contributing through hands-on research, hackathons, and prototyping with emerging protocols like **MCP and A2A**."
   ],
   "educations": [
     {
@@ -30,14 +30,14 @@
       "expert": "Full Stack Generalist, TS/JS, Java, Node, SQL (Postgres, MySQL, DynamoDB).",
       "proficient": "Temporal, Bash, Python, Lua/OpenResty, PHP."
     },
+    "DevOps & Infrastructure": {
+      "expert": "Over a dozen services from prototype to GA with full observability, scaling, security, and production infrastructure in high-availability cloud/native environments.",
+      "proficient": "AWS, Docker/Kubernetes, CI/CD pipelines (GitHub Actions, Jenkins, Buildkite), monitoring stack (DataDog, Prometheus, Grafana)"
+    },
     "AI": {
       "descriptions": [
         "Built multiple voice and text agents in collaboration with OpenAI, Google Gemini and Anthropic. Contributed to development of A2A and MCP."
       ]
-    },
-    "DevOps & Infrastructure": {
-      "expert": "Over a dozen services from prototype to GA with full observability, scaling, security, and production infrastructure in high-availability cloud/native environments.",
-      "proficient": "AWS, Docker/Kubernetes, CI/CD pipelines (GitHub Actions, Jenkins, Buildkite), monitoring stack (DataDog, Prometheus, Grafana)"
     }
   },
   "experiences": [
